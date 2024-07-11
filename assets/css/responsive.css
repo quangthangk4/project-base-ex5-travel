@@ -1,0 +1,27 @@
+/* mobile */
+@media (max-width: 639px) {
+    .home {
+        display: none;
+    }
+    .main {
+        border-top: 1px solid #ccc;
+    }
+}
+
+/* tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+    
+}
+
+/* mobile and tablet */
+@media (max-width: 1023px) {
+    .wide {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    
+}

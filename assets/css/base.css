@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #f44336;
+    --gray-color: #757575;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.margin-h3 {
+    margin-top: 20px;
+}
+
+h6 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background-white {
+    background-color: #fff;
+}
+
+.home__header .background-color-primary{
+    background-color: var(--primary-color);
+}
+
+.position-relative {
+    position: relative;
+}
+
+.margin-bottom-32 {
+    margin-bottom: 32px;
+}
+
+.margin-bottom-16 {
+    margin-bottom: 16px;
+}

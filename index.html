@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <title>Travel</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="header__home">
+            <i class="header__home-icon fa-solid fa-location-dot"></i>
+            Logo
+        </a>
+        <a href="#" class="header__search">
+            <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+        </a>
+    </header>
+
+    <div class="home">
+        <img src="/assets/img/london2.jpg" alt="london2" class="home__img">
+        <div class="home__container">
+            <div class="home__header">
+                <button onclick="ShowHomeContent('flight')"
+                    class="home__header-button js-home__header-flight background-color-primary">
+                    <i class="fa-solid fa-plane"></i>
+                    Flight
+                </button>
+                <button onclick="ShowHomeContent('hotel')" class="home__header-button js-home__header-hotel">
+                    <i class="fa-solid fa-bed"></i>
+                    Hotel
+                </button>
+                <button onclick="ShowHomeContent('rental')" class="home__header-button js-home__header-rental">
+                    <i class="fa-solid fa-car"></i>
+                    Rental
+                </button>
+            </div>
+            <div class="home__flight home__content-padding background-white js-home__flight">
+                <h3 class="home__container-heading">Travel the world with us</h3>
+                <form action="#">
+                    <div class="home__flight-form">
+                        <div class="home__flight-block">
+                            <label for="departing-from" class="home__flight-lable">From</label>
+                            <input class="home__flight-input" type="text" name="departing-from" id="departing-from"
+                                placeholder="Departing from" required>
+                        </div>
+                        <div class="home__flight-block">
+                            <label for="arriving-at" class="home__flight-lable">To</label>
+                            <input class="home__flight-input" type="text" name="arriving-at" id="arriving-at"
+                                placeholder="Ariiving at" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="home__submit">Search and find dates</button>
+                </form>
+            </div>
+
+            <div class="home__hotel home__content-padding background-white js-home__hotel">
+                <h3 class="home__container-heading">Find the best hotels</h3>
+                <p class="home__hotel-infor">Book a hotel with us and get the best fares and promotions.</p>
+                <p class="home__hotel-infor">We know hotels - we know comfort.</p>
+                <button class="home__submit">Search Hotels</button>
+            </div>
+
+            <div class="home__rental home__content-padding background-white js-home__rental">
+                <h3 class="home__container-heading">Best car rental in the world!</h3>
+                <p class="home__rental-infor">
+                    <span class="home__rental-infor-discount">DISCOUNT!</span>
+                    Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs
+                </p>
+                <input class="home__flight-input" type="text" placeholder="Pick-up point" required>
+                <button type="submit" class="home__submit">Search Availability</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="grid wide main">
+        <div class="location">
+            <h3 class="location__heading margin-h3">Good Offers Right Now</h3>
+            <h6 class="location__discount">Up to <strong>50%</strong> discount.</h6>
+            <div class="location__img row sm-gutter">
+                <div class="col c-12 m-6 l-6 position-relative">
+                    <img src="./assets/img/img1.jpg" alt="img1" class="location__img-1">
+                    <h4 class="location__name">Cinque Terre</h4>
+                </div>
+                <div class="col c-12 m-6 l-6">
+                    <div class="row sm-gutter">
+                        <div class="col c-12 m-6 l-6 position-relative">
+                            <img src="./assets/img/img2.jpg" alt="img2" class="location__img-2">
+                            <h4 class="location__name">New York</h4>
+                        </div>
+                        <div class="col c-12 m-6 l-6 position-relative">
+                            <img src="./assets/img/img3.jpg" alt="img3" class="location__img-3">
+                            <h4 class="location__name">San Francisco</h4>
+                        </div>
+                    </div>
+                    <div class="row sm-gutter">
+                        <div class="col c-12 m-6 l-6 position-relative">
+                            <img src="./assets/img/img4.jpg" alt="img4" class="location__img-4">
+                            <h4 class="location__name">Pisa</h4>
+                        </div>
+                        <div class="col c-12 m-6 l-6 position-relative">
+                            <img src="./assets/img/img5.jpg" alt="img5" class="location__img-5">
+                            <h4 class="location__name">Paris</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore">
+            <h3 class="margin-h3">Explore Nature</h3>
+            <p class="explore__mess">Travel with us and see nature at its finest.</p>
+            <div class="row sm-gutter">
+                <div class="col c-12 m-6 l-6 margin-bottom-16">
+                    <img src="./assets/img/image1.jpg" alt="img 1">
+                    <div class="explore__contain-infor">
+                        <h3 class="explore__name">West Coast, Norway</h3>
+                        <p class="explore__price">Roundtrip from <span>$79</span></p>
+                        <p class="explore__infor">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="explore__btn">Buy tickets</button>
+                    </div>
+                </div>
+                <div class="col c-12 m-6 l-6 margin-bottom-16">
+                    <img src="./assets/img/image2.jpg" alt="img 2">
+                    <div class="explore__contain-infor">
+                        <h3 class="explore__name">Mountains, Austria</h3>
+                        <p class="explore__price">Roundtrip from <span>$79</span></p>
+                        <p class="explore__infor">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="explore__btn">Buy tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mail">
+            <h2 class="mail__heading">Get the best offers first!</h2>
+            <p class="mail__mess">Join our newsletter.</p>
+            <form action="#">
+                <label for="mail">E-mail</label>
+                <input type="text" name="mail" id="mail" class="mail__input" placeholder="Your Email address" required>
+                <button type="submit" class="mail__btn">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="contact">
+            <h2 class="contact__heading">Contact</h2>
+            <p class="contact__mess">Let us book your next trip!</p>
+            <p class="contact__location"><i class="contact__location-icon fa-solid fa-location-dot"></i> Chicago, US</p>
+            <p class="contact__location"><i class="contact__location-icon fa-solid fa-phone"></i>Phone: +00 151515</p>
+            <p class="contact__location"><i class="contact__location-icon fa-solid fa-envelope"></i>Email: mail@mail.com
+            </p>
+            <form action="#">
+                <input class="contact__input" type="text" name="nanme" id="name" placeholder="Name" required>
+                <input class="contact__input" type="text" name="Email" id="Email" placeholder="Email" required>
+                <input class="contact__input" type="text" name="message" id="message" placeholder="Message" required>
+                <button type="submit" class="contact__btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h4 class="footer__findUs">Find Us On</h4>
+        <div class="footer__div">
+            <a href="#" class="footer__link"><i class="footer__link-icon fa-brands fa-facebook"></i></a>
+            <a href="#" class="footer__link"><i class="footer__link-icon fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__link"><i class="footer__link-icon fa-brands fa-snapchat"></i></a>
+            <a href="#" class="footer__link"><i class="footer__link-icon fa-brands fa-pinterest"></i></a>
+            <a href="#" class="footer__link"><i class="footer__link-icon fa-brands fa-twitter"></i></a>
+            <a href="#" class="footer__link"><i class="footer__link-icon fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer__mess">11/07/2024 - Trang web được xây dựng bởi
+            <a href="https://www.facebook.com/profile.php?id=100024503231046"
+            class="footer__mess-link">Quang Thắng</a>
+        </p>
+    </footer>
+
+    <script>
+        const flight = document.querySelector(".js-home__header-flight");
+        const hotel = document.querySelector(".js-home__header-hotel");
+        const rental = document.querySelector(".js-home__header-rental");
+
+        const flightContent = document.querySelector(".js-home__flight")
+        const hotelContent = document.querySelector(".js-home__hotel")
+        const rentalContent = document.querySelector(".js-home__rental")
+
+        function removeClassShow() {
+            flight.classList.remove('background-color-primary');
+            hotel.classList.remove('background-color-primary');
+            rental.classList.remove('background-color-primary');
+        }
+
+        function displayNoneHomeContent() {
+            flightContent.style.display = "none";
+            hotelContent.style.display = "none";
+            rentalContent.style.display = "none";
+        }
+
+        function ShowHomeContent(name) {
+            removeClassShow();
+            displayNoneHomeContent();
+            if (name === "flight") {
+                flight.classList.add('background-color-primary');
+                flightContent.style.display = "block";
+            }
+            else if (name === "hotel") {
+                hotel.classList.add('background-color-primary');
+                hotelContent.style.display = "block";
+            }
+            else {
+                rental.classList.add('background-color-primary');
+                rentalContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
